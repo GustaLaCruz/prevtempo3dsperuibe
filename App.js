@@ -54,13 +54,17 @@ const styles = StyleSheet.create({
     
   },
   botao:{
-    marginLeft:'10%',
-    marginRight:'10%',
+    marginLeft:'20%',
+    marginRight:'20%',
     marginTop:'10%',
-    backgroundColor:'#DF330E'
+    backgroundColor:'#DF330E',
+    padding:10,
+    borderRadius:'30%',
+    
   },
   textoBotao:{
     fontSize:20,
-    textAlign:'center'
+    textAlign:'center',
+    color:'#ffff'
   },
 });
