@@ -1,1 +1,2 @@
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+//https://api.hgbrasil.com/weather?array_limit=1&fields=only_results,temp,city_name,description,forecast,max,min,date&key=ddce6cfe&city_name=Peruibe,SP

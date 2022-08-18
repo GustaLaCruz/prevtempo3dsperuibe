@@ -5,8 +5,8 @@ export default function Tempo() {
  return (
      <>
         <Text style={styles.texto}>Min:</Text>
-        <Text style={styles.texto}>Max:</Text>
-        <Text style={styles.texto}>Descrição:</Text>
+        <Text style={styles.texto}>Max: </Text>
+        <Text style={styles.texto}>Bezeichnung:</Text>
    </>
   );
 }

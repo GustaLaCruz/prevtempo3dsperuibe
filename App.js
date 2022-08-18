@@ -1,9 +1,17 @@
-import { React } from 'react';
+import  React, {useState}  from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, Touchable } from 'react-native';
 import Tempo from './components/Tempo';
-
+/*import Api from './components/Api';*/
 
 export default function App() {
+ /* const [dados, setDados] = useState();
+  const [cidade, setCidade] = useState();
+
+  async function buscaCep(){
+    const resposta = await Api.get('weather?array_limit=1&fields=only_results,temp,city_name,description,forecast,max,min,date&key=ddce6cfe&city_name=Peruibe,SP');
+  }
+    setDados(resposta.data.forecast[0]);
+    console.warn(dados);*/
   return (
     <View style={styles.container}>
         <View style={styles.bloco}>
@@ -16,6 +24,7 @@ export default function App() {
         <TextInput
           placeholder='deine Stadt ...'
           style={styles.input}
+          onPress={buscaCep}
         />
         </View>
 
@@ -24,7 +33,7 @@ export default function App() {
               <Text style={styles.textoBotao}>Suche</Text>
             </TouchableOpacity>
         </View>
-        <Tempo/>
+        <Tempo data={dados}/>
     </View>
   );
 }
